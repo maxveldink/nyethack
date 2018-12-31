@@ -4,6 +4,10 @@ fun main(args: Array<String>) {
     val player = Player("Madrigal")
     player.castFireball()
 
+    var currentRoom: Room = TownSquare()
+    println(currentRoom.description())
+    println(currentRoom.load())
+
     // com.bignerdranch.nyethack.Player Status
     printPlayerStatus(player)
 }
